@@ -22,6 +22,7 @@ img {
 .l-side {
     width: 300px;
     padding-top: 25px;
+    padding-bottom: 100px;
     background-color: #3a5e90;
     color: white;
 }
@@ -55,7 +56,11 @@ img {
     padding-top: 25px;
 }
 
-.content-item :not(:last-child) {
+.personal-information-block__content span {
+    display: block;
+}
+
+.content-item:not(:last-child) {
     padding-bottom: 15px;
 }
 
@@ -76,4 +81,32 @@ img {
 .content-item.d-flex {
     justify-content: space-between;
     padding-right: 20px;
+}
+
+.r-side .personal-information-block {
+    padding-right: 20px;
+}
+
+.r-side .personal-information-block__title {
+    border-bottom: 2px solid grey;
+}
+
+.personal-information-block__title-big {
+    padding-bottom: 25px;
+    border-bottom: 2px solid grey;
+    font-size: 40px;
+}
+
+
+.content-point span:nth-child(1) {
+    font-style: italic;
+    padding-bottom: 5px;
+}
+
+.content-point span:nth-child(2) {
+    color: rgb(63, 63, 63);
+}
+
+.f-col {
+    color: rgb(63, 63, 63);
 }
