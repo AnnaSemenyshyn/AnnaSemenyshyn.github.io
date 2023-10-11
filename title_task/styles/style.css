@@ -1,0 +1,24 @@
+div {
+    margin: 50px 400px;
+    font-size: 60px;
+    text-align: center;
+
+}
+
+div::before {
+    display: block;
+    content: " ";
+    border-top: 10px solid black;
+    position: relative;
+    top: 40px;
+    right: 350px;
+}
+
+div::after {
+    display: block;
+    content: " ";
+    border-bottom: 10px solid black;
+    position: relative;
+    bottom: 39px;
+    left: 350px;
+}
