@@ -110,3 +110,11 @@ img {
 .f-col {
     color: rgb(63, 63, 63);
 }
+
+a {
+    display: block;
+    padding-bottom: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(63, 63, 63);
+}
