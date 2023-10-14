@@ -18,26 +18,27 @@ img {
 }
 
 .content {
+    position: relative;
     display: flex;
     justify-content: center;
     margin: 30px auto;
 }
 
 .l-side {
-    width: 350px;
     position: relative;
+    width: 350px;
 }
 
 .content-block {
+    position: absolute;
+    top: 220px;
+    right: 5px;
     width: 360px;
     height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 220px;
-    right: 5px;
+    text-align: center;
     background-color: black;
     color: white;
 }
@@ -57,58 +58,59 @@ img {
 }
 
 .r-side {
-    width: calc(90% - 350px);
-    background-color: white;
     position: relative;
+    width: calc(70% - 350px);
+    background-color: white;
 }
 
 .information-block-title {
     text-align: center;
     font-size: 20px;
     padding-top: 30px;
+    padding-bottom: 50px;
 }
 
-.information-block-content {
+.information-menu-wrap {
+    max-width: 500px;
+    padding: 0 50px;
+}
+
+.menu-wrap-row {
     display: flex;
-    justify-content: space-around;
-    text-align: center;
-    padding: 30px 0;
+    justify-content: space-between;
+    margin: 10px;
 }
 
-.item-name {
-    font-size: 20px;
-    padding-top: 20px;
+.menu-wrap-row_item {
+    position: relative;
+    width: calc(50% - 50px);
+    border-bottom: 2px solid grey;
+    text-align: center;
+}
 
+.menu-wrap-row_item:after {
+    content: '';
+    position: absolute;
+    left: calc(50% - 5px);
+    bottom: -5px;
+    display: block;
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+    background: gray;
 }
 
 .item-price {
-    font-size: 20px;
-    color: gray;
-    position: relative;
-}
-
-.item-price::before {
-    content: "\25C6";
-    position: absolute;
-    top: 32px;
-    left: 75px;
-}
-
-.item-price::after {
-    content: " ";
-    display: flex;
-    border-bottom: solid 1.5px gray;
-    margin-top: 20px;
+    padding-bottom: 30px;
 }
 
 button {
-    display: block;
-    width: 190px;
-    height: 60px;
-    background-color: black;
-    color: white;
     position: absolute;
     top: 450px;
-    left: 74%;
+    left: 68%;
+    display: block;
+    padding: 20px 60px;
+    background-color: black;
+    color: white;
     font-weight: bold;
 }
