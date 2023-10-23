@@ -24,23 +24,64 @@ img {
     margin: 30px auto;
 }
 
+@media screen and (max-width:991px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 .l-side {
     position: relative;
-    width: 350px;
+    width: 330px;
+}
+
+@media screen and (max-width:991px) {
+    .l-side {
+        left: 135px;
+
+    }
+}
+
+@media screen and (max-width:768px) {
+    .l-side {
+        left: 0;
+    }
 }
 
 .content-block {
     position: absolute;
-    top: 220px;
+    top: 120px;
     right: 5px;
-    width: 360px;
-    height: 200px;
+    width: 340px;
+    height: 180px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     background-color: black;
     color: white;
+}
+
+@media screen and (max-width:991px) {
+    .content-block {
+        position: absolute;
+        top: 0;
+        right: 330px;
+        width: 270px;
+        height: 330px;
+
+    }
+}
+
+@media screen and (max-width:768px) {
+    .content-block {
+        top: 120px;
+        right: 10px;
+        width: 340px;
+        height: 180px;
+    }
 }
 
 .f-big {
@@ -70,15 +111,37 @@ img {
     padding-bottom: 50px;
 }
 
+@media screen and (max-width:991px) {
+    .information-block-title {
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .information-block-title {
+        padding-bottom: 30px;
+    }
+}
+
+
 .information-menu-wrap {
     max-width: 600px;
     padding: 0 50px;
 }
 
+
 .menu-wrap-row {
     display: flex;
     justify-content: space-between;
     margin: 10px;
+}
+
+@media screen and (max-width:767px) {
+    .menu-wrap-row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .menu-wrap-row_item {
@@ -101,17 +164,37 @@ img {
 }
 
 .item-price {
-    padding-bottom: 20px;
+    color: gray;
+    padding-bottom: 15px;
 }
 
 button {
     position: absolute;
-    top: 260px;
+    top: 345px;
     right: 0;
     display: block;
     padding: 20px 60px;
     background-color: black;
     color: white;
-    font-size: 20px;
     font-weight: 900;
+}
+
+@media screen and (max-width:991px) {
+    button {
+        top: 300px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    button {
+        top: 445px;
+        left: 0;
+    }
+}
+
+@media screen and (max-width:575px) {
+    button {
+        top: 445px;
+        left: 0;
+    }
 }
