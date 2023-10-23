@@ -14,7 +14,7 @@ img {
 }
 
 .wrapper {
-    max-width: 1200px;
+    max-width: 1400px;
 }
 
 .content {
@@ -59,7 +59,7 @@ img {
 
 .r-side {
     position: relative;
-    width: calc(70% - 350px);
+    width: 600px;
     background-color: white;
 }
 
@@ -71,7 +71,7 @@ img {
 }
 
 .information-menu-wrap {
-    max-width: 500px;
+    max-width: 600px;
     padding: 0 50px;
 }
 
@@ -101,16 +101,17 @@ img {
 }
 
 .item-price {
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 
 button {
     position: absolute;
-    top: 450px;
-    left: 68%;
+    top: 260px;
+    right: 0;
     display: block;
     padding: 20px 60px;
     background-color: black;
     color: white;
-    font-weight: bold;
+    font-size: 20px;
+    font-weight: 900;
 }
