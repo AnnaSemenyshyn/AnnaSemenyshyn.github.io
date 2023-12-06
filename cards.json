@@ -4,8 +4,8 @@
       "image": "images/doctor-1.png",
       "title": "Dr. Jeanette Hoff",
       "description": {
-        "text-top": "Orthodontic Treatment",
-        "text-bottom": "Yale Medical School"
+        "textTop": "Orthodontic Treatment",
+        "textBottom": "Yale Medical School"
       },
       "button": "Appoinment"
     },
@@ -13,8 +13,8 @@
       "image": "images/doctor-2.png",
       "title": "Dr. David Ambrose",
       "description": {
-        "text-top": "Orthodontic Treatment",
-        "text-bottom": "Harvard Medical School"
+        "textTop": "Orthodontic Treatment",
+        "textBottom": "Harvard Medical School"
       },
       "button": "Appoinment"
     },
@@ -22,8 +22,8 @@
       "image": "images/doctor-3.png",
       "title": "Dr. Jenelia Breton",
       "description": {
-        "text-top": "Orthodontic Treatment",
-        "text-bottom": "Oxford Medical School"
+        "textTop": "Orthodontic Treatment",
+        "textBottom": "Oxford Medical School"
       },
       "button": "Appoinment"
     },
@@ -31,8 +31,8 @@
       "image": "images/doctor-4.png",
       "title": "Dr. Jagajeet Aurora",
       "description": {
-        "text-top": "Orthodontic Treatment",
-        "text-bottom": "Harvard Medical School"
+        "textTop": "Orthodontic Treatment",
+        "textBottom": "Harvard Medical School"
       },
       "button": "Appoinment"
     },
@@ -40,8 +40,8 @@
       "image": "images/doctor-1.png",
       "title": "Dr. Jeanette Hoff",
       "description": {
-        "text-top": "Orthodontic Treatment",
-        "text-bottom": "Yale Medical School"
+        "textTop": "Orthodontic Treatment",
+        "textbottom": "Yale Medical School"
       },
       "button": "Appoinment"
     },
@@ -49,8 +49,8 @@
       "image": "images/doctor-2.png",
       "title": "Dr. David Ambrose",
       "description": {
-        "text-top": "Orthodontic Treatment ",
-        "text-bottom": "Harvard Medical School"
+        "textTop": "Orthodontic Treatment ",
+        "textBottom": "Harvard Medical School"
       },
       "button": "Appoinment"
     }
