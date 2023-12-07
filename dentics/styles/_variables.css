@@ -1,0 +1,21 @@
+:root {
+    --black-gray-secondary: #52525B;
+    --white-primary: #FFF;
+    --white-bg: #F8FAFC;
+    --white-25: rgba(255, 255, 255, 0.25);
+    --secondary-yellow: #FFD700;
+    --primary-blue: #516EFF;
+    ----black-gray-primary: #18181B;
+    --primary-yellow: #FFE766;
+    --black-gray: #777777;
+    --background: #216583;
+    --black-gray-gray-tone: #BCBCBC;
+    --black-gray-black-25: rgba(82, 82, 91, 0.25);
+    --black-gray-black-10: rgba(82, 82, 91, 0.10);
+    --black-gray-d-0-d-5-dd: #D0D5DD;
+    --white-30: rgba(255, 255, 255, 0.30);
+    --black-gray-black-5: rgba(24, 24, 27, 0.05);
+    --logo-title-font: 'Ubuntu', sans-serif;
+    --main-font: 'Inter', sans-serif;
+    --black-gray-primary: #18181B;
+}
