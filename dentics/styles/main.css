@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2? family= Ubuntu:wght@500 & display=swap');
 @import url('https://fonts.googleapis.com/css2? family= Inter:wght@400;500;600;700 & display=swap');
 @import url('_header.css');
+@import url('_variables.css');
 @import url('_section-f.css');
 @import url('_section-s.css');
 @import url('_footer.css');
@@ -83,7 +84,6 @@ a {
 
 .btn {
     border-radius: 8px;
-    cursor: pointer;
 }
 
 .bg-color {
@@ -94,7 +94,25 @@ a {
     background-color: var(--white-bg);
 }
 
+
+@media (min-width:768px) {
+    .hide-mobile {
+        display: flex;
+    }
+
+    .hide-desktop {
+        display: none;
+    }
+}
+
+@media (min-width:1450px) {
+    .content-wrap {
+        padding: 0;
+    }
+}
+
 /*------Header Navigation--------*/
+
 nav {
     height: 60px;
     position: relative;
@@ -161,6 +179,9 @@ nav {
     line-height: 24px;
     margin-left: auto;
     background-color: var(--primary-blue);
+}
+
+a .btn-nav {
     color: var(--white-primary);
 }
 
@@ -218,13 +239,28 @@ nav {
     padding: 16px 28px;
 }
 
+.btn-left:hover {
+    background-color: var(--primary-yellow);
+}
+
+.btn-right:hover {
+    background-color: var(--primary-yellow);
+}
+
+a .btn-left {
+    color: var(--white-primary);
+}
+
 .btn-left {
     margin-right: 28px;
 }
 
+a .btn-right {
+    color: var(----black-gray-primary);
+}
+
 .btn-left {
     background-color: var(--primary-blue);
-    color: var(--white-primary);
 }
 
 .btn-right {
@@ -379,6 +415,8 @@ nav {
     }
 }
 
+/*---SECTIONS---*/
+
 /*--SECTION-SERVICES*/
 
 /*-----Holder----*/
@@ -425,6 +463,18 @@ nav {
     color: var(----black-gray-primary);
 }
 
+.btn-call:hover {
+    background-color: var(--primary-yellow);
+}
+
+.btn-data:hover {
+    background-color: var(--primary-yellow);
+}
+
+.btn-consult:hover {
+    background-color: var(--primary-yellow);
+}
+
 .btn-call,
 .btn-data {
     margin-bottom: 48px;
@@ -458,9 +508,9 @@ nav {
 }
 
 .key-services .section-title {
-    border-bottom: 1px solid var(--primary-blue);
     padding: 16px 32px 46px 0;
-    margin-bottom: 48px;
+    border-bottom: 1px solid var(--primary-blue);
+    margin-bottom: 35px;
 }
 
 .key-services .title {
@@ -475,10 +525,8 @@ nav {
     padding: 0 31px;
 }
 
-
 .key-services .image {
     max-width: 496px;
-
 }
 
 .key-services .content {
@@ -706,6 +754,14 @@ nav {
     line-height: 14px;
 }
 
+.container .btn-transparent:hover {
+    background-color: var(--primary-yellow);
+}
+
+.container a .btn-transparent {
+    color: var(--white-primary);
+}
+
 /*------History----------*/
 /*---header-content-----*/
 .history {
@@ -764,7 +820,7 @@ nav {
 }
 
 .history .section-img .col-bg {
-    width: 122px;
+    max-width: 122px;
     height: 308px;
     border-radius: 12px;
     background-color: var(--primary-blue);
@@ -773,15 +829,15 @@ nav {
 .history .section-img .img-bg {
     position: absolute;
     top: 30px;
-    right: 2px;
-    width: 50px;
-    height: 153px;
+    right: 32px;
+    max-width: 50px;
+    max-height: 153px;
 }
 
 .history .section-img .image-front {
     position: absolute;
-    bottom: 70px;
-    left: 5px;
+    bottom: 50px;
+    right: 55px;
     max-width: 462px;
     border-radius: 16px;
 }
@@ -1145,6 +1201,7 @@ nav {
 }
 
 /*--information-content--*/
+
 @media (min-width:768px) {
     .history {
         padding-bottom: 128px;
@@ -1155,25 +1212,17 @@ nav {
         justify-content: space-between;
     }
 
-    .section-image {
+    .history .section-image {
         position: relative;
         min-width: 570px;
     }
 
-    .section-image .image-bg {
-        position: absolute;
-        top: 50px;
-        left: 5px;
-        width: 122px;
-        height: 308px;
-        border-radius: 12px;
-        background-color: var(--primary-blue);
+
+    .history .section-image .col-bg {
+        max-width: 120px;
+        height: 280px;
     }
 
-    .section-image .image-front {
-        max-width: 462px;
-        border-radius: 16px;
-    }
 
     .history .section-text {
         max-width: 634px;
@@ -1196,7 +1245,6 @@ nav {
 
     }
 }
-
 
 /*--SECTION TEAM--*/
 /*---header-content--*/
@@ -1301,14 +1349,19 @@ nav {
 
 .cards .card .institute {
     text-align: center;
+    margin-bottom: 32px;
 }
 
-.cards .card .button {
+.cards .card a .button {
     padding: 12px 40px;
     font-size: 1rem;
     border: 1.5px solid var(--primary-blue);
     border-radius: 8px;
     color: var(--primary-blue);
+}
+
+.cards .card a .button:hover {
+    background-color: var(--primary-yellow);
 }
 
 .swiper-scrollbar {
@@ -1321,13 +1374,23 @@ nav {
     padding: 46px 0;
 }
 
+/*.client .container {
+    height: 470px;
+}*/
+
 .client .swiper-slide .section-information {
     padding-top: 450px;
 }
 
+
 .client .container .swiper {
     position: relative;
+
 }
+
+/*.client .container .swiper .swiper-wrapper {
+    height: 470px;
+}*/
 
 .client .container .swiper .swiper-pagination {
     position: absolute;
@@ -1344,17 +1407,19 @@ nav {
 
 .client .section-content .background-col {
     position: absolute;
-    top: -35px;
+    top: -5px;
     left: 44px;
     width: 100%;
-    max-width: 232px;
-    height: 470px;
-    border-radius: 8px;
+    max-width: 200px;
+    height: 450px;
+    border-radius: 12px;
     background-color: var(--secondary-yellow);
+
 }
 
 .client .section-content .image {
     position: absolute;
+    top: 30px;
     width: 100%;
     max-width: 318px;
     padding: 40px;
@@ -1483,9 +1548,10 @@ nav {
 }
 
 .consult .section-img .background-col {
+
     width: 100%;
-    max-width: 380px;
-    height: 558px;
+    max-width: 350px;
+    height: 280px;
     border-radius: 32px;
     background-color: var(--primary-blue);
     background-size: cover;
@@ -1493,7 +1559,8 @@ nav {
 
 .consult .section-img .image-front {
     position: absolute;
-    top: 40px;
+    left: 20px;
+    top: 20px;
     width: 100%;
     max-width: 448px;
     max-height: 588px;
@@ -1504,7 +1571,7 @@ nav {
     max-width: 100%;
     max-width: 800px;
     padding: 24px 33px 24px 23px;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .consult form {
@@ -1519,6 +1586,15 @@ nav {
     border-radius: 8px;
     border: 1px solid var(--black-gray-black-25);
 }
+
+.consult .section-form .doctor select {
+    width: 100%;
+    max-width: 298px;
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: 1px solid var(--black-gray-black-25);
+}
+
 
 .consult .section-form textarea {
     width: 100%;
@@ -1574,15 +1650,24 @@ nav {
     text-align: center;
     padding: 16px 0;
     border-radius: 8px;
-    color: var(--white-primary);
     background-color: var(--primary-blue);
 }
 
+.consult .section-form .button:hover {
+    background-color: var(--primary-yellow);
+}
+
+.consult .section-form a .button {
+    color: var(--white-primary);
+}
+
 /*--SECTION-LETTER--*/
+.letter {
+    background-color: var(--white-bg);
+}
 
 .letter .content-wrap {
     padding: 96px 0;
-    background-color: var(--white-bg);
 }
 
 .letter .content-wrap .content {
@@ -1607,7 +1692,6 @@ nav {
     left: 0;
 
 }
-
 
 .letter .content-wrap .vector-light {
     top: 225px;
@@ -1638,11 +1722,29 @@ nav {
     height: 58px;
     padding: 17px 16px 17px 20px;
     border-radius: 9px;
+    text-align: center;
 }
 
-.letter .content-letter .input input {
-    border: 1px solid var(--white-30);
+.letter .content-letter .input .light {
     background-color: var(--white-30);
+    border: 1px solid transparent;
+    color: var(--white-primary);
+}
+
+.letter .content-letter a .button {
+    width: 100%;
+    max-width: 256px;
+    height: 58px;
+    padding: 17px 16px 17px 20px;
+    border: 1px solid transparent;
+    border-radius: 9px;
+    text-align: center;
+    background-color: var(--white-primary);
+    color: var(--black-gray-secondary);
+}
+
+.letter .content-letter a .button:hover {
+    background-color: var(--primary-yellow);
 }
 
 /*---MEDIA QUERYES---*/
@@ -1724,6 +1826,8 @@ nav {
 /*---cards----*/
 
 /*--SECTION-CLIENT--*/
+@media (min-width:380px) {}
+
 @media (min-width:768px) {
     .client {
         padding: 96px 0;
@@ -1748,6 +1852,154 @@ nav {
 }
 
 /*---section-image----*/
+@media (min-width:380px) {
+    .client .section-content .background-col {
+        position: absolute;
+        top: -5px;
+        left: 44px;
+        width: 100%;
+        max-width: 232px;
+        height: 470px;
+        border-radius: 12px;
+        background-color: var(--secondary-yellow);
+
+    }
+
+    .client .section-content .image {
+        position: absolute;
+        top: 30px;
+        width: 100%;
+        max-width: 318px;
+        padding: 40px;
+        background-color: var(--white-primary);
+        border-radius: 8px;
+        box-shadow: 0px 8px 24px 0px rgba(34, 48, 114, 0.07);
+    }
+
+    .client .image img {
+        width: 100%;
+        max-width: 238px;
+        margin-bottom: 24px;
+    }
+
+    .client .image .image-title {
+        max-width: 232px;
+        font-size: 1.125rem;
+        font-weight: 600;
+        line-height: 24px;
+        margin-bottom: 8px;
+        text-align: center;
+
+    }
+
+    .client .image .image-icon {
+        max-width: 232px;
+        color: var(--secondary-yellow);
+        text-align: center;
+    }
+}
+
+@media (min-width:768px) {
+
+    .client .section-content .background-col {
+        position: absolute;
+        top: -5px;
+        left: 44px;
+        width: 100%;
+        max-width: 180px;
+        height: 390px;
+        border-radius: 12px;
+        background-color: var(--secondary-yellow);
+
+    }
+
+    .client .section-content .image {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+
+}
+
+@media (min-width:820px) {
+    .client .section-content .image {
+        position: absolute;
+        left: 20px;
+    }
+}
+
+@media (min-width:880px) {
+    .client .section-content .background-col {
+        max-width: 200px;
+        height: 410px;
+    }
+
+    .client .section-content .image {
+        position: absolute;
+        top: 30px;
+        left: 10px;
+    }
+}
+
+@media (min-width:932px) {
+
+    .client .section-content .background-col {
+        position: absolute;
+        top: -5px;
+        left: 44px;
+        width: 100%;
+        max-width: 200px;
+        height: 450px;
+        border-radius: 12px;
+        background-color: var(--secondary-yellow);
+
+    }
+
+    .client .section-content .image {
+        position: absolute;
+        top: 30px;
+        left: 0;
+    }
+
+}
+
+@media (min-width:992px) {
+    .client .section-content {
+        width: 100%;
+        max-width: 318px;
+        position: relative;
+    }
+
+    .client .section-content .background-col {
+        position: absolute;
+        top: -5px;
+        left: 44px;
+        width: 100%;
+        max-width: 232px;
+        height: 470px;
+        border-radius: 12px;
+        background-color: var(--secondary-yellow);
+
+    }
+
+    .client .section-content .image {
+        position: absolute;
+        top: 30px;
+        left: 0;
+        width: 100%;
+        max-width: 318px;
+        padding: 40px;
+        background-color: var(--white-primary);
+        border-radius: 8px;
+        box-shadow: 0px 8px 24px 0px rgba(34, 48, 114, 0.07);
+    }
+
+    .client .image img {
+        width: 100%;
+        max-width: 238px;
+        margin-bottom: 24px;
+    }
+}
 
 /*----section-information------*/
 @media (min-width:768px) {
@@ -1843,6 +2095,65 @@ nav {
     }
 }
 
+/*---section-image----*/
+@media (min-width:420px) {
+    .consult .section-img .background-col {
+        width: 100%;
+        height: 410px;
+    }
+}
+
+@media (min-width:530px) {
+    .consult .section-img {
+        width: 100%;
+        max-width: 496px;
+        max-height: 588px;
+        font-family: var(--main-font);
+    }
+
+    .consult .section-img .background-col {
+        position: static;
+        right: 30px;
+        width: 100%;
+        max-width: 380px;
+        height: 588px;
+        border-radius: 32px;
+        background-color: var(--primary-blue);
+        background-size: cover;
+    }
+}
+
+@media (min-width:768px) {
+    .consult .section-img {
+        position: relative;
+        width: 100%;
+        max-width: 496px;
+        max-height: 588px;
+        font-family: var(--main-font);
+    }
+
+    .consult .section-img .background-col {
+        position: absolute;
+        right: 30px;
+        width: 100%;
+        max-width: 380px;
+        height: 408px;
+        border-radius: 32px;
+        background-color: var(--primary-blue);
+        background-size: cover;
+    }
+}
+
+@media (min-width:992px) {
+    .consult .section-img .background-col {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        max-width: 380px;
+        height: 558px;
+    }
+}
+
 /*--SECTION-LETTET--*/
 @media (min-width:768px) {
 
@@ -1851,7 +2162,7 @@ nav {
     }
 
 
-    /*--SECTION FOOTER--*/
+    /*---FOOTER---*/
 }
 
 .footer-content {
@@ -1875,7 +2186,6 @@ nav {
 
 .footer-content .item .logo-icon img {
     max-width: 39px;
-
 }
 
 .footer-content .item .logo-title {
@@ -1886,8 +2196,8 @@ nav {
 }
 
 .footer-content .item .logo,
-.title {
-    margin-bottom: 40px;
+.logo-title {
+    margin-bottom: 5px;
 }
 
 .footer-content .item .description {
@@ -1901,6 +2211,7 @@ nav {
 .footer-content .item .title {
     font-family: var(--main-font);
     font-size: 0.875rem;
+    margin-bottom: 40px;
 }
 
 .footer-content .item .title-description {
@@ -1981,7 +2292,7 @@ footer address {
     }
 
     .col-1-2 {
-        width: calc();
+        width: calc(50% - 61px);
     }
 
 }
@@ -1992,7 +2303,7 @@ footer address {
     }
 
     .col-1-4 {
-        width: calc();
+        width: calc(25% - 46px);
     }
 
 }

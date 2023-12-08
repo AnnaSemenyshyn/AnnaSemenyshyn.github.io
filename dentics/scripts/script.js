@@ -44,18 +44,18 @@ let swip = new Swiper('.itsSwiper', {
             slidesPerView: 1,
             spaceBetween: 40
         },
-        // when window width is >= 480px
+        // when window width is >= 540px
         540: {
             slidesPerView: 2,
             spaceBetween: 30
         },
 
-        // when window width is >= 480px
+        // when window width is >= 820px
         820: {
             slidesPerView: 3,
             spaceBetween: 40
         },
-        // when window width is >= 640px
+        // when window width is >= 1024px
         1024: {
             slidesPerView: 4,
             spaceBetween: 40
@@ -84,6 +84,9 @@ function populateCards(obj) {
         const cardBlock = document.createElement('div')
         cardBlock.className = 'swiper-slide'
 
+        const cardWrap = document.createElement('div')
+        cardWrap.className = 'card'
+
         const image = document.createElement('img')
         image.src = card.image
         image.className = 'image'
@@ -100,17 +103,26 @@ function populateCards(obj) {
         institute.textContent = card.description.institute
         institute.className = 'institute'
 
+        const link = document.createElement('a')
+        link.href = card.link
+        link.textContent = card.link
+
+
         const button = document.createElement('div')
-        button.textContent = card.description.button
+        button.textContent = card.button
         button.className = "button"
 
-        cardBlock.append(image)
-        cardBlock.append(cardName)
-        cardBlock.append(position)
-        cardBlock.append(institute)
-        cardBlock.append(button)
+        cardBlock.append(cardWrap)
+        cardWrap.append(image)
+        cardWrap.append(cardName)
+        cardWrap.append(position)
+        cardWrap.append(institute)
+        cardWrap.append(link)
+        link.append(button)
         section.append(cardBlock)
     }
 }
 
 populate()
+
+
