@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2? family= Ubuntu:wght@500 & display=swap');
 @import url('https://fonts.googleapis.com/css2? family= Inter:wght@400;500;600;700 & display=swap');
-@import url('_header.css');
-@import url('_variables.css');
-@import url('_section-f.css');
-@import url('_section-s.css');
-@import url('_footer.css');
 
 :root {
     --black-gray-secondary: #52525B;
