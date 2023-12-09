@@ -9,6 +9,7 @@ burgerIcons.addEventListener('click', () => {
     iconBars.classList.toggle('menu-close')
 })
 
+
 let swiper = new Swiper('.mySwiper', {
     derection: 'horizontal',
     loop: false,
